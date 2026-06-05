@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8E7F5; /* Fundo lilás claro da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.contact-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Seção da Imagem */
+.image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Seção do Formulário */
+.form-section {
+    flex: 1;
+    padding: 60px 40px;
+}
+
+.form-section h2 {
+    color: #9C27B0; /* Roxo do título */
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #F5EBF7; /* Fundo dos inputs */
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #A08DA0;
+}
+
+button {
+    background-color: #B524B5; /* Roxo vibrante do botão */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #911c91;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .contact-card {
+        flex-direction: column;
+    }
+    .image-section {
+        padding: 20px;
+    }
+}
